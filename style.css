@@ -1,0 +1,141 @@
+body {
+    display: flex;
+    justify-content: center;
+    background-color: #ccc;
+}
+img.jumbo {
+    width: 610px;
+    height: 400px;
+    object-fit: cover;
+    flex-grow: 1;
+    margin-bottom: 10px;
+    transition: .3s;
+}
+
+.container {
+    width: 618px;
+    margin-top: 10px;
+    padding: 5px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.thumbnails {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 4px;
+    border-top: 4px solid #eee;
+}
+
+img.thumb {
+    width: 200px;
+    height: 133px;
+    object-fit: cover;
+    transition: 0.1s;
+}
+.thumb.active {
+    opacity: .7;
+}
+
+.thumb:hover {
+    opacity: .8;
+    cursor: pointer;
+}
+.thumb:active {
+    opacity: 1;
+}
+
+.fade {
+    opacity: 0;
+    animation: fade 0.5s forwards;
+}
+
+@keyframes fade {
+    to {
+        opacity: 1;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+ /* reset css */
+ 
+*:where(:not(html, iframe, canvas, img, svg, video, audio):not(svg *, symbol *)) {
+    all: unset;
+    display: revert;
+}
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+a, button {
+    cursor: revert;
+}
+ol, ul, menu {
+}
+img {
+    max-width: 100%;
+}
+table {
+    border-collapse: collapse;
+}
+input, textarea {
+    -webkit-user-select: auto;
+}
+textarea {
+    white-space: revert;
+}
+meter {
+    -webkit-appearance: revert;
+    appearance: revert;
+}
+::placeholder {
+    color: unset;
+}
+:where([hidden]) {
+    display: none;
+}
+:where([contenteditable]:not([contenteditable="false"])) {
+    -moz-user-modify: read-write;
+    -webkit-user-modify: read-write;
+    overflow-wrap: break-word;
+    -webkit-line-break: after-white-space;
+    -webkit-user-select: auto;
+}
+:where([draggable="true"]) {
+    -webkit-user-drag: element;
+}
